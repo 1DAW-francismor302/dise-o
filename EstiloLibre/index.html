@@ -4,44 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño Libre</title>
-     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/dise-o/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container-fluid text-center bg-primary">
-        <div class="row justify-content-between pt-2">
+    <div class="container-fluid bg-dark text-white min-vh-100">
+        <div class="row justify-content-between p-4">
             <div class="col-auto">
-                <p>Fco Javier Moreno Muñoz</p>
+                <p><b>Fco Javier Moreno Muñoz</b></p>
             </div>
             <div class="col-auto">
-                <p>2ºDAW</p>
+                <p><b>2ºDAW</b></p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center mb-4 text-warning">
             <div class="col-auto">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imagenes/camisetasNuevas.jpeg" class="d-block w-auto" alt="Lesión Nianzou">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/noticiaNianzou.jpeg" class="d-block w-auto" alt="Lesion Nianzou">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
+                <h1>¡Bienvenido A La Mejor Web De Recetas!</h1>
+            </div>
+        </div>
+        <div class="row m-5 text-center">
+            <div class="col-4 d-flex justify-content-start">
+                <div class="card p-2" style="width: 28rem; height: 500px;">
+                    <div class="overflow-hidden" style="height: 200px;">
+                        <img src="./imagenes/galletas.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="galletas">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="card-body">
+                        <p class="card-text">Incluimos todo tipo de recetas pensadas para todos los gustos, desde opciones dulces para los más golosos hasta platos salados ideales para el día a día. Nuestra intención es que cualquier persona pueda encontrar aquí algo que le apetezca preparar, sin importar sus preferencias o nivel de experiencia en la cocina.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+                <div class="card p-2" style="width: 28rem; height: 500px;">
+                    <div class="overflow-hidden" style="height: 200px;">
+                        <img src="./imagenes/sushi.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="sushi">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Tenemos comidas de distintos países del mundo, ofreciendo una selección variada que reúne sabores tradicionales y propuestas modernas de diferentes culturas. Nos gusta explorar recetas internacionales para que puedas descubrir platos nuevos, viajar a través del paladar y disfrutar de gastronomías muy distintas sin salir de casa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-end">
+                <div class="card p-2" style="width: 28rem; height: 500px;">
+                    <div class="overflow-hidden" style="height: 200px;">
+                        <img src="./imagenes/arroz.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="arroz">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Tenemos desde recetas muy sencillas, perfectas para quienes buscan algo rápido y sin complicaciones, hasta preparaciones mucho más elaboradas en las que no podrás despistarte ni un segundo. Nos gusta ofrecer opciones para todos los niveles, desde platos básicos ideales para empezar en la cocina hasta desafíos culinarios que pondrán a prueba tu atención y tus habilidades.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center m-4">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/marisco caldo.jpg" class="w-100 object-fit-cover" style="height: 50vh;" alt="marisco caldo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/tacos.jpg" class="w-100 object-fit-cover" style="height: 50vh;" alt="tacos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/pasta.jpg" class="w-100 object-fit-cover" style="height: 50vh;" alt="pasta">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="bg-secondary rounded-pill m-4" style="height: 3px;"></div>
+        <div class="row align-items-center p-5">
+            <div class="col-6 d-flex justify-content-center">
+                <img src="./imagenes/guisantes.jpg" class="img-fluid" style="max-height: 400px;" alt="guisantes">
+            </div>
+
+            <div class="col-6">
+                <p>Para preparar este curry de garbanzos, comienza calentando un poco de aceite en una sartén amplia a fuego medio. Añade la cebolla picada finamente junto con el ajo y el jengibre rallado, y deja que se cocinen lentamente hasta que la cebolla esté tierna y ligeramente dorada. Este paso es importante porque crea la base aromática del plato y aporta un sabor profundo al curry.<br>
+
+                <br>Cuando las verduras estén listas, incorpora el tomate picado y remueve para que se mezcle bien con el sofrito. En este punto añade las especias: una cucharadita de comino, cúrcuma y pimentón dulce. Mezcla con calma para que las especias se tuesten ligeramente y liberen todo su aroma, evitando que se quemen.<br>
+
+                <br>A continuación, agrega los garbanzos ya cocidos y mezcla para que se impregnen del sabor de las especias. Vierte un poco de leche de coco para darle cremosidad y suavizar el conjunto. Deja que todo se cocine a fuego suave durante unos minutos, permitiendo que los sabores se integren y la salsa espese ligeramente.<br>
+
+                <br>Prueba y ajusta de sal o especias si lo ves necesario. Sirve el curry bien caliente acompañado de arroz blanco o basmati, y si te apetece, añade un poco de cilantro o perejil fresco picado por encima para darle un toque final más fresco y aromático.</p>
+            </div>
+        </div>
+
+        <div class="bg-secondary rounded-pill m-4" style="height: 3px;"></div>
+        <div class="row align-items-center p-5">
+            <div class="col-6 d-flex justify-content-center">
+                <img src="./imagenes/patatas.jpg" class="img-fluid" style="max-height: 400px;" alt="patatas">
+            </div>
+
+            <div class="col-6">
+                <p>Empieza pelando y cortando 4-5 patatas grandes en bastones gruesos. Fríelas en aceite caliente hasta que estén doradas y crujientes, o si prefieres una versión más ligera, hornéalas con un poco de aceite de oliva a 200°C durante 30-40 minutos, removiendo a mitad de cocción.<br>
+
+                <br>Mientras se cocinan, prepara la carne: sofríe media cebolla picada en una sartén con aceite, añade 300g de carne picada (puede ser de ternera, cerdo o pollo) y cocina hasta que esté bien dorada. Agrega sal, pimienta, comino, pimentón y una pizca de chile en polvo si te gusta el toque picante. Cocina unos minutos más hasta que esté bien sazonada.<br>
+
+                <br>Corta en cubos pequeños tomate, pimiento verde, pimiento amarillo y cebolla morada. Cuando las patatas estén listas, colócalas en una bandeja o fuente, cúbrelas con queso rallado (cheddar, mozzarella o mezcla), añade la carne caliente y los vegetales frescos. Gratina brevemente si quieres que el queso se derrita por completo.<br>
+
+                <br>Finaliza con perejil fresco picado o cilantro, y si te apetece, añade una cucharada de crema agria o salsa barbacoa. Es un plato ideal para compartir, lleno de color, sabor y textura, perfecto para una comida informal o una reunión con amigos.</p>
+            </div>
+        </div>
+        <div class="bg-secondary rounded-pill m-4" style="height: 3px;"></div>
+        <div class="row align-items-center p-5">
+            <div class="col-6 d-flex justify-content-center">
+                <img src="./imagenes/tarta.jpg" class="img-fluid" style="max-height: 400px;" alt="guisantes">
+            </div>
+
+            <div class="col-6">
+                <p>Para preparar esta tarta de queso, comienza triturando unos 200g de galletas tipo Digestive o María. Mézclalas con 100g de mantequilla derretida hasta obtener una masa húmeda. Presiona esta mezcla en la base de un molde desmontable, formando una capa uniforme, y refrigérala mientras preparas el relleno.<br>
+
+                <br>En un bol grande, bate 500g de queso crema con 150g de azúcar hasta que esté suave. Añade tres huevos, uno a uno, mezclando bien entre cada incorporación. Agrega una cucharadita de esencia de vainilla, la ralladura de medio limón y 100ml de nata líquida. Incorpora un puñado de pasas previamente hidratadas en agua caliente o ron, según prefieras. Vierte la mezcla sobre la base de galleta y hornea a 160°C durante unos 50-60 minutos, hasta que el centro esté casi cuajado.<br>
+
+                <br>Deja enfriar completamente y luego refrigera al menos 4 horas. Para el glaseado, calienta mermelada de naranja con una cucharada de agua hasta que esté fluida, y extiéndela sobre la superficie de la tarta. Decora con grosellas frescas y virutas de chocolate negro. Sirve fría, idealmente al día siguiente, para que los sabores se asienten y la textura sea perfecta.</p>
+            </div>
+        </div>
+        <div class="bg-secondary rounded-pill m-4" style="height: 3px;"></div>
+        <div class="row justify-content-center align-items-center pb-4 text-warning">
+            <div class="col-auto text-center">
+                <h2>Proximamente más recetas disponibles</h2>
+                <h1>¡GRACIAS POR SU VISITA!</h1>
+            </div>
+        </div>
+        <div class="row p-5 text-center">
+            <div class="col-4 d-flex justify-content-start">
+                <img src="https://img.icons8.com/?size=100&id=78382&format=png&color=FFFFFF" style="height: 30px; width: auto; margin-right: 10px;">
+                <p>610 055 877</p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="https://img.icons8.com/?size=100&id=53388&format=png&color=FFFFFF" style="height: 30px; width: auto; margin-right: 10px;">
+                <p>javiermm.04@gmail.com</p>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=FFFFFF" style="height: 30px; width: auto; margin-right: 10px;">
+                <p>javiimoreno_20</p>
+            </div>
+        </div>
+
     </div>
-    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/dise-o/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
