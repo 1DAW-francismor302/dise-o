@@ -1,0 +1,17 @@
+@use "variables";
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin respuesta($ancho) {
+    @if $ancho > variables.$pantalla-grande {
+        font-size: 30px;
+    }@else if $ancho > 800px {
+        font-size: 25px;
+    }@else {
+        font-size: 20px;
+    }
+}

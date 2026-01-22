@@ -1,0 +1,26 @@
+.body-fondo {
+  background-color: #6200ea;
+  margin: 32px;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-rojo {
+  color: red;
+}
+
+.title-verde {
+  color: green;
+}
+
+.title-blue {
+  color: blue;
+}
+
+.tamano-fuente {
+  font-size: 30px;
+}/*# sourceMappingURL=estilos.css.map */

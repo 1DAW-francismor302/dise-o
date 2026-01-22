@@ -1,0 +1,5 @@
+@use "variables";
+
+@function space($size) {
+    @return map-get(variables.$spacing-scale, $size);
+}

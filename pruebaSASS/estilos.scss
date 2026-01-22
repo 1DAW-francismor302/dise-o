@@ -1,0 +1,26 @@
+@use "variables";
+@use "mixins";
+@use "funciones";
+
+.body-fondo {
+    background-color: variables.$color-primario;
+    margin: funciones.space(xl);
+}
+
+.centrado {
+    @include mixins.flex-center;
+}
+
+@each $key, $value in variables.$values-color {
+    .title-#{$key} {
+        color: $value;
+    }
+}
+
+.tamano-fuente {
+    @include mixins.respuesta(1300px);
+}
+
+.temas-colores {
+    @include mixins.temas(variables.$tema);
+}
