@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "../abstract/maps" as maps;
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --surface: #f9f9f9;
+  --primary: #{map.get(maps.$colors, primary)};
+  --secondary: #{map.get(maps.$colors, secondary)};
+  --success: #{map.get(maps.$colors, success)};
+  --danger: #{map.get(maps.$colors, danger)};
+  --warning: #{map.get(maps.$colors, warning)};
+  --info: #{map.get(maps.$colors, info)};
+}

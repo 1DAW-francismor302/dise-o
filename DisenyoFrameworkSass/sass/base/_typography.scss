@@ -1,0 +1,39 @@
+@use "../abstract/variables" as *;
+@use "../abstract/maps" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+
+body {
+  font-size: rem($font-base-size);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text, #111);
+  background-color: var(--bg, #fff);
+}
+
+h1 {
+  font-size: rem(type-scale(4));
+}
+
+h2 {
+  font-size: rem(type-scale(3));
+}
+
+h3 {
+  font-size: rem(type-scale(2));
+}
+
+h4 {
+  font-size: rem(type-scale(1));
+}
+
+h5 {
+  font-size: rem(type-scale(0));
+}
+
+h6 {
+  font-size: rem(type-scale(-1));
+}
+
+p {
+  font-size: rem(type-scale(0));
+}

@@ -1,0 +1,28 @@
+@use "sass:math";
+@use "../abstract/variables" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+@use "../abstract/maps" as maps;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 math.percentage(math.div($i, 12));
+    max-width: math.percentage(math.div($i, 12));
+  }
+}
+
+@each $breakpoint, $size in maps.$breakpoints {
+  @include respond($breakpoint, maps.$breakpoints) {
+    @for $i from 1 through 12 {
+      .col-#{$i}-#{$breakpoint} {
+        flex: 0 0 math.percentage(math.div($i, 12));
+        max-width: math.percentage(math.div($i, 12));
+      }
+    }
+  }
+}

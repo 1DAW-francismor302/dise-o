@@ -1,0 +1,52 @@
+@use "sass:map";
+@use "../abstract/variables" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+@use "../abstract/maps" as maps;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: map.get(maps.$spacing, md);
+}
+
+.form__label {
+  font-size: rem(type-scale(0));
+  font-weight: 500;
+}
+
+.form__input,
+.form__textarea,
+.form__select {
+  padding: map.get(maps.$spacing, sm) map.get(maps.$spacing, md);
+  border: 1px solid #ccc;
+  border-radius: $border-radius-sm;
+  font-size: rem(type-scale(0));
+  outline: none;
+
+  @include state-disabled;
+}
+
+.form__input:focus,
+.form__textarea:focus,
+.form__select:focus {
+  border-color: map.get(maps.$colors, primary);
+  box-shadow: 0 0 0 2px rgba(map.get(maps.$colors, primary), 0.2);
+}
+
+.form__input--error,
+.form__textarea--error,
+.form__select--error {
+  border-color: map.get(maps.$colors, danger);
+}
+
+.form__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form__select {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+}

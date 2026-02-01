@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "../abstract/maps" as maps;
+
+@each $name, $color in maps.$colors {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}

@@ -1,0 +1,7 @@
+@use "sass:map";
+@use "../abstract/maps" as maps;
+
+.footer {
+  padding: map.get(maps.$spacing, md);
+  text-align: center;
+}

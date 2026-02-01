@@ -1,0 +1,18 @@
+@use "sass:math";
+@use "variables" as *;
+
+@function rem($px) {
+  @return math.div($px, 16px) * 1rem;
+}
+
+@function type-scale($step) {
+  @return $font-base-size * math.pow($font-scale-ratio, $step);
+}
+
+@function contrast-color($color) {
+  @if lightness($color) > 50% {
+    @return black;
+  } @else {
+    @return white;
+  }
+}

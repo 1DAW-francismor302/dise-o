@@ -1,0 +1,17 @@
+@use "sass:map";
+
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex { display: flex; }
+
+@each $justify, $value in (start: flex-start, center: center, end: flex-end, between: space-between) {
+  .justify-#{$justify} { justify-content: $value; }
+}
+
+@each $align, $value in (start: flex-start, center: center, end: flex-end) {
+  .align-#{$align} { align-items: $value; }
+}
+
+.row { flex-direction: row; }
+.column { flex-direction: column; }

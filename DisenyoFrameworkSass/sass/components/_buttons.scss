@@ -1,0 +1,46 @@
+@use "sass:map";
+@use "../abstract/variables" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+@use "../abstract/maps" as maps;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: map.get(maps.$spacing, sm) map.get(maps.$spacing, md);
+  border-radius: $border-radius-md;
+  border: none;
+  font-size: rem(type-scale(0));
+  cursor: pointer;
+
+  @include state-hover {
+    filter: brightness(1.1);
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  @include state-disabled;
+}
+
+@each $name, $color in maps.$colors {
+  .btn--#{$name} {
+    background-color: $color;
+    color: contrast-color($color);
+  }
+}
+
+$sizes: (
+  sm: (map.get(maps.$spacing, xs), map.get(maps.$spacing, sm)),
+  md: (map.get(maps.$spacing, sm), map.get(maps.$spacing, md)),
+  lg: (map.get(maps.$spacing, md), map.get(maps.$spacing, lg))
+);
+
+@each $size, $padding in $sizes {
+  .btn--#{$size} {
+    padding: nth($padding, 1) nth($padding, 2);
+  }
+}

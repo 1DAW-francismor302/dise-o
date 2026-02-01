@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "../abstract/variables" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+@use "../abstract/maps" as maps;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface, #fff);
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body,
+.card__footer {
+  padding: map.get(maps.$spacing, md);
+}
+
+.card__header {
+  font-weight: 600;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: map.get(maps.$spacing, sm);
+}
+
+@each $name, $color in maps.$colors {
+  .card--#{$name} {
+    border-left: 4px solid $color;
+  }
+}

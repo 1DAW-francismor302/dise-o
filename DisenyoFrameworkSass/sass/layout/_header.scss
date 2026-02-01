@@ -1,0 +1,9 @@
+@use "sass:map";
+@use "../abstract/maps" as maps;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: map.get(maps.$spacing, md);
+}
